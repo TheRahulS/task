@@ -13,14 +13,16 @@ if (!$query) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Categories</title>
 </head>
+
 <body>
     <h1>Categories</h1>
-    <button>   <a href="category.php">add category</a></button>
+    <button> <a href="category.php">add category</a></button>
     <!-- <button>   <a href="views.php">Active category</a></button> -->
     <table border="1">
         <tr>
@@ -48,4 +50,5 @@ if (!$query) {
     <?php
     include 'views.php'; ?>
 </body>
+
 </html>
