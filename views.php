@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Active Categories</title>
 </head>
+
 <body>
     <h1>Active Categories</h1>
     <table border="1">
@@ -16,7 +18,7 @@
         </thead>
         <tbody>
             <?php
-            include 'connection.php';       
+            include 'connection.php';
             // Fetch active categories from the database
             $sql = "SELECT id, category_name FROM categories WHERE status='active'";
             $query = mysqli_query($conn, $sql);
@@ -26,7 +28,7 @@
                 while ($row = mysqli_fetch_assoc($query)) {
                     $categoryId = $row['id'];
                     $categoryName = $row['category_name'];
-                    
+
                     // Output each active category as a table row
                     echo "<tr>";
                     echo "<td>$categoryId</td>";
@@ -40,4 +42,5 @@
         </tbody>
     </table>
 </body>
+
 </html>
