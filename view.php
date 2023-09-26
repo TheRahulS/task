@@ -2,7 +2,8 @@
 include 'connection.php';
 
 // Fetch categories from the database
-$sql = "SELECT id, category_name, status, created_at, updated_at FROM categories";
+// $sql = "SELECT id, category_name, status, created_at, updated_at FROM categories";
+$sql = "SELECT * FROM categories";
 $query = mysqli_query($conn, $sql);
 
 if (!$query) {
